@@ -1,8 +1,9 @@
 <nav class="navbar is-warning is-fixed-bottom" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="#">
-    <img  src="assets/img/smiley.png">
-    WATCHMEN
+      
+      WATCHMEN
+      <img src="assets/img/smiley.png">
     </a>
 
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -20,27 +21,45 @@
   </div>
 </section>
 
-<section class="black-box section has-text-centered">
-  <div class="container">
-    <h1 class="black-box-text title">Section</h1>
-    <h2 class="black-box-text subtitle">
-      This is a section.
-    </h2>
+<section class="hero is-medium black-box has-text-centered is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title black-box-text">
+        Get to know your favorite characters
+      </h1>
+      <h2 class="subtitle black-box-text">
+        Continue below.
+      </h2>
+    </div>
   </div>
 </section>
 
-<div class="is-ancestor">
-  <div class="tile is-parent">
-    <article class="tile is-child is-6 is-radiusless has-text-centered box">
-      hellllllo
-    </article>
+{{!-- <section class="black-box section">
+  <div class="container">
+    <div class="columns"></div>
+    <div class="column is-2">
+      <h1 class="black-box-text title">Section</h1>
+      <h2 class="black-box-text subtitle">
+        This is a section.
+      </h2>
+    </div>
+    <div class="column is-2">
+      <h1 class="black-box-text title">Section</h1>
+      <h2 class="black-box-text subtitle">
+        This is a section.
+      </h2>
+    </div>
   </div>
-</div>
+</section> --}}
+
 
 <div class="tile tester is-ancestor">
   <div class="tile is-4 is-parent">
     <div class="tile is-child box has-background-warning is-shadowless">
-      <p class="title is-size-5">“Heard joke once: Man goes to doctor. Says he's depressed. Says life seems harsh and cruel. Says he feels all alone in a threatening world where what lies ahead is vague and uncertain. Doctor says, "Treatment is simple. Great clown Pagliacci is in town tonight. Go and see him. That should pick you up." Man bursts into tears. Says, "But doctor...I am Pagliacci.”</p>
+      <p class="title is-size-5">“Heard joke once: Man goes to doctor. Says he's depressed. Says life seems harsh and
+        cruel. Says he feels all alone in a threatening world where what lies ahead is vague and uncertain. Doctor says,
+        "Treatment is simple. Great clown Pagliacci is in town tonight. Go and see him. That should pick you up." Man
+        bursts into tears. Says, "But doctor...I am Pagliacci.”</p>
     </div>
   </div>
   <div class="tile is-4 is-parent">
@@ -50,150 +69,58 @@
   </div>
 </div>
 
-<div class="control has-icons-left">
-  <div class="select is-large">
-    <select>
-      <option selected>Characters:</option>
-      <option>Ozymandias</option>
-      <option>Dr. Manhattan</option>
-      <option>The Comedian</option>
-      <option>Nite Owl</option>
-    </select>
-  </div>
-  <span class="icon is-large is-left">
-    <i class="fas fa-globe"></i>
-  </span>
-</div>
+
+<button id="comic-btn">CLICK</button>
+<div id="comic-test"></div>
 
 <div class="tile is-ancestor">
-  <div class="tile is-parent">
-    <article class="tile is-child box">
-      <p class="title">One</p>
-      <p class="subtitle">Subtitle</p>
-    </article>
-  </div>
-  <div class="tile is-parent">
-    <article class="tile is-child box">
-      <p class="title">Two</p>
-      <p class="subtitle">Subtitle</p>
-    </article>
-  </div>
-  <div class="tile is-parent">
-    <article class="tile is-child box">
-      <p class="title">Three</p>
-      <p class="subtitle">Subtitle</p>
-    </article>
-  </div>
-  <div class="tile is-parent">
-    <article class="tile is-child box">
-      <p class="title">Four</p>
-      <p class="subtitle">Subtitle</p>
-    </article>
-  </div>
-</div>
-
-<div class="tile is-ancestor">
-  <div class="tile is-vertical is-9">
+  <div class="tile is-vertical is-8">
     <div class="tile">
-      <div class="tile is-parent">
+      <div class="tile is-parent is-vertical">
         <article class="tile is-child box">
-          <p class="title">Five</p>
-          <p class="subtitle">Subtitle</p>
-          <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
-          </div>
+          <p class="title">CHARACTER NAME</p>
+          <p class="subtitle">Alias 1</p>
+          <p class="subtitle">Alias 2</p>
         </article>
-      </div>
-      <div class="tile is-8 is-vertical">
-        <div class="tile">
-          <div class="tile is-parent">
-            <article class="tile is-child box">
-              <p class="title">Six</p>
-              <p class="subtitle">Subtitle</p>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child box">
-              <p class="title">Seven</p>
-              <p class="subtitle">Subtitle</p>
-            </article>
-          </div>
-        </div>
-        <div class="tile is-parent">
-          <article class="tile is-child box">
-            <p class="title">Eight</p>
-            <p class="subtitle">Subtitle</p>
-          </article>
-        </div>
-      </div>
-    </div>
-    <div class="tile">
-      <div class="tile is-8 is-parent">
         <article class="tile is-child box">
-          <p class="title">Nine</p>
-          <p class="subtitle">Subtitle</p>
-          <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-          </div>
+          <p class="title">Vertical tiles</p>
+          <p class="subtitle">Bottom box</p>
         </article>
       </div>
       <div class="tile is-parent">
         <article class="tile is-child box">
-          <p class="title">Ten</p>
-          <p class="subtitle">Subtitle</p>
-          <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-          </div>
+          <p class="title">STRENGTHS</p>
+          <p class="subtitle">With an image</p>
+          {{!-- <figure class="image is-4by3">
+            <img src="https://bulma.io/images/placeholders/640x480.png">
+          </figure> --}}
         </article>
       </div>
     </div>
-  </div>
-  <div class="tile is-parent">
-    <article class="tile is-child box">
-      <div class="content">
-        <p class="title">Eleven</p>
-        <p class="subtitle">Subtitle</p>
+    <div class="tile is-parent">
+      <article class="tile is-child box">
+        <p class="title">Wide column</p>
+        <p class="subtitle">Aligned with the right column</p>
         <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
-          <p>Integer sollicitudin, tortor a mattis commodo, velit urna rhoncus erat, vitae congue lectus dolor consequat libero. Donec leo ligula, maximus et pellentesque sed, gravida a metus. Cras ullamcorper a nunc ac porta. Aliquam ut aliquet lacus, quis faucibus libero. Quisque non semper leo.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
         </div>
-      </div>
-    </article>
-  </div>
-</div>
-
-<div class="tile is-ancestor">
-  <div class="tile is-parent">
-    <article class="tile is-child box">
-      <p class="title">Twelve</p>
-      <p class="subtitle">Subtitle</p>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut.</p>
-      </div>
-    </article>
-  </div>
-  <div class="tile is-parent is-6">
-    <article class="tile is-child box">
-      <p class="title">Thirteen</p>
-      <p class="subtitle">Subtitle</p>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-      </div>
-    </article>
+      </article>
+    </div>
   </div>
   <div class="tile is-parent">
     <article class="tile is-child box">
-      <p class="title">Fourteen</p>
-      <p class="subtitle">Subtitle</p>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut.</p>
-      </div>
+      {{!-- <div class="content"> --}}
+        <figure class="image">
+            <img src="https://www.superherodb.com/pictures2/portraits/10/100/884.jpg">
+          </figure>
+      {{!-- </div> --}}
     </article>
   </div>
 </div>
 
 
-Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+  href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 
 
 <script src="/assets/js/finder.js" type="text/javascript"></script>
