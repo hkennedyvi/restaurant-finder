@@ -24,3 +24,11 @@ body {
 .black-box-text {
    color: hsl(48, 100%, 67%) !important;
 }
+
+.strength-tile {
+   border: solid black 1px;
+}
+
+.character-section {
+   font-family: 'Oswald', sans-serif;
+}
