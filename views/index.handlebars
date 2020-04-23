@@ -1,7 +1,7 @@
 <nav class="navbar is-warning is-fixed-bottom" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="#">
-      
+
       WATCHMEN
       <img src="assets/img/smiley.png">
     </a>
@@ -69,6 +69,21 @@
   </div>
 </div>
 
+<div class="control has-icons-left">
+  <div class="select is-large">
+    <select class="char-dropdown">
+      <option selected>Characters:</option>
+      <option value="Ozymandias">Ozymandias</option>
+      <option value="Dr Manhattan">Dr. Manhattan</option>
+      <option value="The Comedian">The Comedian</option>
+      <option value="Nite Owl">Nite Owl</option>
+    </select>
+  </div>
+  <span class="icon is-large is-left">
+    <i class="fas fa-globe"></i>
+  </span>
+</div>
+
 
 <button id="comic-btn">CLICK</button>
 <div id="comic-test"></div>
@@ -83,17 +98,21 @@
           <p class="subtitle">Alias 2</p>
         </article>
         <article class="tile is-child box">
-          <p class="title">Vertical tiles</p>
-          <p class="subtitle">Bottom box</p>
+          <p class="title">WORK</p>
+          <p class="subtitle">Occupation</p>
+          <p class="subtitle">Base</p>
         </article>
       </div>
       <div class="tile is-parent">
         <article class="tile is-child box">
           <p class="title">STRENGTHS</p>
-          <p class="subtitle">With an image</p>
-          {{!-- <figure class="image is-4by3">
-            <img src="https://bulma.io/images/placeholders/640x480.png">
-          </figure> --}}
+          <div class="content">
+            <ol type="1">
+              <li>Coffee</li>
+              <li>Tea</li>
+              <li>Milk</li>
+            </ol>
+          </div>
         </article>
       </div>
     </div>
@@ -102,7 +121,8 @@
         <p class="title">Wide column</p>
         <p class="subtitle">Aligned with the right column</p>
         <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor
+            vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
         </div>
       </article>
     </div>
@@ -110,9 +130,9 @@
   <div class="tile is-parent">
     <article class="tile is-child box">
       {{!-- <div class="content"> --}}
-        <figure class="image">
-            <img src="https://www.superherodb.com/pictures2/portraits/10/100/884.jpg">
-          </figure>
+      <figure class="image">
+        <img src="https://www.superherodb.com/pictures2/portraits/10/100/884.jpg">
+      </figure>
       {{!-- </div> --}}
     </article>
   </div>

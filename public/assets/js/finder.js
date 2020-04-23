@@ -4,10 +4,17 @@ $("#comic-btn").click(function() {
     console.log("hiii")
 })
 
+$(".char-dropdown").change(function() {
+    let selectedChar = $(this).children("option:selected").val();
+    
+    console.log(selectedChar);
+ 
+})
+
 function getCharacters() {
   const queryURL = "https://superheroapi.com/api.php/";
   const key = "126917828959679";
-  const searchTerm = "/search/dr manhattan";
+  const searchTerm = "/search/ozymandias";
 
   $.ajax({
     url: queryURL + key + searchTerm,
