@@ -2,6 +2,10 @@ body {
    background-color: hsl(48, 100%, 67%);
 }
 
+ul {
+   list-style-type: none !important;
+}
+
 .tester {
    border: solid black 1px;
    font-family: 'Oswald', sans-serif;
