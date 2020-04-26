@@ -7,6 +7,19 @@ ul {
    list-style-type: none !important;
 }
 
+.blood-spot {
+   background-image: url("/assets/img/smiley.png");
+   height: 200px;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 300px;
+}
+
+.select-selected {
+   background-color: DodgerBlue;
+ }
+
 .tester {
    border: solid black 1px;
    font-family: 'Oswald', sans-serif;

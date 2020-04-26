@@ -1,8 +1,3 @@
-$("#comic-btn").click(function () {
-  console.log("hiii")
-  getCharacters("ozymandias");
-})
-
 $(".char-dropdown").change(function () {
   let selectedChar = $(this).children("option:selected").val();
   $("#comic-test").empty();
