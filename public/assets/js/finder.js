@@ -5,6 +5,7 @@ $("#comic-btn").click(function () {
 
 $(".char-dropdown").change(function () {
   let selectedChar = $(this).children("option:selected").val();
+  $("#comic-test").empty();
   getCharacterInfo(selectedChar);
 })
 
