@@ -32,6 +32,37 @@ function getCharacterInfo(character) {
     let durability = response.results[0].powerstats.durability;
     let power = response.results[0].powerstats.power;
 
+    let quote;
+
+    console.log(character);
+
+
+
+    switch (character) {
+      case "Ozymandias":
+        quote = `"I don't mind being the smartest man in the world, I just wish it wasn't this one."`;
+        break;
+        case "Nite Owl":
+        quote = `"Y'know, this must be how ordinary people feel. This must be how ordinary people feel around us."`;
+        break;
+      case "Rorschach":
+        quote = `"I live my life free of compromise, and step into the shadows without complaint or regret."`;
+        break;
+      case "Dr Manhattan":
+        quote = `"We're all puppets, Laurie. I'm just a puppet who can see the strings."`;
+        break;
+      case "Moloch":
+        quote = `"For everything I did, everything I stole, everyone I killed, nothing changed. I was still me."`;
+        break;
+        case "The Comedian":
+        quote = `"Once you realize what a joke everything is, being the Comedian is the only thing that makes sense."`;
+        break;
+      case "Silk Spectre":
+        quote = `"I used to be a masked avenger too, remember … I mean, I'm used to going out at three in the morning and doing something stupid."`;
+        break;
+      default:
+    }
+
     const charInfo = `<div class="character-section tile is-ancestor">
         <div class="tile is-vertical is-8">
           <div class="tile">
@@ -64,12 +95,9 @@ function getCharacterInfo(character) {
           </div>
           <div class="tile is-parent">
             <article class="tile is-child has-background-black is-radiusless box">
-              <p class="title has-text-warning">Wide column</p>
-              <p class="subtitle has-text-warning">Aligned with the right column</p>
+              <p class="title has-text-warning">Quote</p>
               <div class="content">
-                <p class="has-text-warning">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros,
-                  eu pellentesque tortor
-                  vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                <p class="subtitle has-text-warning">${quote}</p>
               </div>
             </article>
           </div>
