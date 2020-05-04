@@ -1,33 +1,29 @@
 body {
    background-color: hsl(48, 100%, 67%);
-   height: 2500px;
 }
 
 ul {
    list-style-type: none !important;
 }
 
-.blood-spot {
+.smile-bg {
    background-image: url("/assets/img/smiley.png");
-   height: 200px;
+   height: 100px;
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
-   background-size: 300px;
+   background-size: 75px;
 }
 
-.select-selected {
-   background-color: DodgerBlue;
+select {
+   background-color: black !important;
+   color: hsl(48, 100%, 67%) !important;
  }
 
-.tester {
-   border: solid black 1px;
-   font-family: 'Oswald', sans-serif;
-}
 
 .navbar {
    font-family: 'Oswald', sans-serif;
-   font-size: 50px;
+   font-size: 25px;
 }
 
 .fa-male {
@@ -41,12 +37,34 @@ ul {
 
 .black-box-text {
    color: hsl(48, 100%, 67%) !important;
+   font-family: 'Oswald', sans-serif;
 }
 
-.strength-tile {
+.power-tile {
    border: solid black 1px;
 }
 
 .character-section {
    font-family: 'Oswald', sans-serif;
+}
+
+#icon-credit {
+   text-align: center;
+   font-size: 6px;
+}
+
+#comic-test {
+   height: 300px;
+}
+
+.test {
+   height: 600px !important;
+}
+
+.control {
+   margin: 0 0 0 25px;
+}
+
+.fa-search {
+   margin: 0 30px 0 0;
 }

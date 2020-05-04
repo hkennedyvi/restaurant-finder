@@ -1,6 +1,9 @@
-$(".char-dropdown").change(function () {
+$("#char-dropdown").change(function () {
   let selectedChar = $(this).children("option:selected").val();
   $("#comic-test").empty();
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $("#comic-test").offset().top
+  }, 2000);
   getCharacterInfo(selectedChar);
 })
 
@@ -23,8 +26,12 @@ function getCharacterInfo(character) {
     let charImage = response.results[0].image.url;
 
     let intelligence = response.results[0].powerstats.intelligence;
-    let strength = response.results[0].powerstats.intelligence;
-    let speed = response.results[0].powerstats.strength;
+    // let strength;
+    // if (response.results[0].powerstats.strength === null) {
+    //   strength = "noooo";
+    // } else {strength = response.results[0].powerstats.strength;}
+    let strength = response.results[0].powerstats.strength;
+    let speed = response.results[0].powerstats.speed;
     let durability = response.results[0].powerstats.durability;
     let power = response.results[0].powerstats.power;
 
@@ -44,8 +51,8 @@ function getCharacterInfo(character) {
               </article>
             </div>
             <div class="tile is-parent">
-              <article class="strength-tile tile is-child has-background-warning is-radiusless is-shadowless box">
-                <p class="title has-text-black has-text-centered">STRENGTHS</p>
+              <article class="power-tile tile is-child has-background-warning is-radiusless is-shadowless box">
+                <p class="title has-text-black has-text-centered">POWERS</p>
                 <div class="content has-text-black">
                   <ul type="1">
                     <li>STRENGTH: ${strength}</li>
@@ -80,6 +87,7 @@ function getCharacterInfo(character) {
       </div>`;
 
     $("#comic-test").append(test);
+    $("#comic-test").attr("class", "test");
 
 
     //   comicDiv = $("#comic-test");
