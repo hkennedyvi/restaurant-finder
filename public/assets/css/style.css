@@ -53,11 +53,11 @@ select {
    font-size: 6px;
 }
 
-#comic-test {
+#character-div {
    height: 300px;
 }
 
-.test {
+.cd-with-content {
    height: 600px !important;
 }
 

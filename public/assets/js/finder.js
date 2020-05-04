@@ -1,17 +1,15 @@
 $("#char-dropdown").change(function () {
   let selectedChar = $(this).children("option:selected").val();
-  $("#comic-test").empty();
+  $("#character-div").empty();
   $([document.documentElement, document.body]).animate({
-    scrollTop: $("#comic-test").offset().top
+    scrollTop: $("#character-div").offset().top
   }, 2000);
   getCharacterInfo(selectedChar);
 })
 
 function getCharacterInfo(character) {
   const key = "126917828959679";
-  // const searchTerm = "dr manhattan";
   const queryURL = `https://superheroapi.com/api.php/${key}/search/${character}`;
-
 
   $.ajax({
     url: queryURL,
@@ -24,7 +22,6 @@ function getCharacterInfo(character) {
     let hairColor = response.results[0].appearance['hair-color'];
     let alias = response.results[0].biography.aliases[0];
     let charImage = response.results[0].image.url;
-
     let intelligence = response.results[0].powerstats.intelligence;
     // let strength;
     // if (response.results[0].powerstats.strength === null) {
@@ -35,7 +32,7 @@ function getCharacterInfo(character) {
     let durability = response.results[0].powerstats.durability;
     let power = response.results[0].powerstats.power;
 
-    const test = `<div class="character-section tile is-ancestor">
+    const charInfo = `<div class="character-section tile is-ancestor">
         <div class="tile is-vertical is-8">
           <div class="tile">
             <div class="tile is-parent is-vertical">
@@ -86,13 +83,7 @@ function getCharacterInfo(character) {
         </div>
       </div>`;
 
-    $("#comic-test").append(test);
-    $("#comic-test").attr("class", "test");
-
-
-    //   comicDiv = $("#comic-test");
-    //   const image = $("<img>")
-    //   image.attr("src", response.results[0].image.url);
-    //   comicDiv.append(image);
+    $("#character-div").append(charInfo);
+    $("#character-div").attr("class", "cd-with-content");
   });
 }
