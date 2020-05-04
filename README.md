@@ -6,11 +6,11 @@ An application for finding simple character bios for the Watchmen cast of charac
 
 ## Tech Utilized 
 
-Jquery 
-Bulma styling framework
-Express
-Express.handlebars
-Superhero API
+* Jquery 
+* Bulma styling framework
+* Express
+* Express.handlebars
+* Superhero API
 
 <img src ="public/assets/img/watchmen_app_image1.png">
 
