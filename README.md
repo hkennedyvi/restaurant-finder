@@ -20,7 +20,7 @@ git clone git@github.com:hkennedyvi/watchmen.git
 
 4. Run the application using `node server.js`
 
-5. Open a browser window and navigate to [localhost:3000](localhost:3000)
+5. Open a browser window and navigate to `localhost:3000`
 
 ## Tech Utilized 
 
